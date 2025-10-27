@@ -4,10 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front Chat Widget</title>
+    <style>
+      body {
+        background-color: pink;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 80px 20px;
+      }
+
+      h1, p {
+        font-size: 3rem;
+        background: linear-gradient(
+          90deg,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow 5s linear infinite;
+        background-size: 400%;
+      }
+
+      @keyframes rainbow {
+        0% {
+          background-position: 0%;
+        }
+        100% {
+          background-position: 100%;
+        }
+      }
+
+      p {
+        font-size: 2rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>Front Chat Widget Host</h1>
-    <p>This page loads your Front chat widget.</p>
+    <h1>Front Chat Widget Host 🌈</h1>
+    <p>This page loads your Front chat widget!</p>
 
     <!-- Front Chat widget installation -->
     <script src="https://chat-assets.frontapp.com/v1/chat.bundle.js"></script>
