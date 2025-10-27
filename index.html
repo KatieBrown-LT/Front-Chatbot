@@ -7,14 +7,14 @@
     <style>
       body {
         background-color: pink;
-        font-family: Arial, sans-serif;
+        font-family: "Comic Sans MS", "Segoe UI", "Arial", sans-serif;
         text-align: center;
         margin: 0;
         padding: 80px 20px;
       }
 
-      h1, p {
-        font-size: 3rem;
+      h1 {
+        font-size: 3.5rem;
         background: linear-gradient(
           90deg,
           red,
@@ -29,6 +29,25 @@
         -webkit-text-fill-color: transparent;
         animation: rainbow 5s linear infinite;
         background-size: 400%;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+      }
+
+      p {
+        font-size: 2rem;
+        background: linear-gradient(
+          90deg,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow 8s linear infinite;
+        background-size: 400%;
       }
 
       @keyframes rainbow {
@@ -40,13 +59,28 @@
         }
       }
 
-      p {
-        font-size: 2rem;
+      .rainbow {
+        vertical-align: middle;
+        width: 70px;
+        margin: 0 10px;
       }
     </style>
   </head>
   <body>
-    <h1>Front Chat Widget Host 🌈</h1>
+    <h1>
+      <img
+        src="https://em-content.zobj.net/source/microsoft-teams/337/rainbow_1f308.png"
+        alt="🌈"
+        class="rainbow"
+      />
+      Front Chat Widget Host
+      <img
+        src="https://em-content.zobj.net/source/microsoft-teams/337/rainbow_1f308.png"
+        alt="🌈"
+        class="rainbow"
+      />
+    </h1>
+
     <p>This page loads your Front chat widget!</p>
 
     <!-- Front Chat widget installation -->
